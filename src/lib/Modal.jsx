@@ -9,7 +9,7 @@ import './Modal.css'
  *
  * @category Components
  * @component
- * @param {object} children
+ * @param {string} children
  * @param {boolean} isOpen state variable boolean for controling modal visibility
  * @param {function} onClose callback to close the modal component
  * @returns {React.Component} - The modal component.
