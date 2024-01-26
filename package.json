@@ -1,6 +1,6 @@
 {
   "name": "hrnet-modal-library",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "main": "dist/index.js",
   "module": "dist/index.js",
   "files": [
@@ -14,6 +14,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "rm -rf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files",
+    "docs": "jsdoc -c jsdoc.conf.json",
     "prepublishOnly": "npm run build"
   },
   "peerDependencies": {
@@ -49,6 +50,8 @@
     ]
   },
   "dependencies": {
+    "better-docs": "^2.7.3",
+    "jsdoc": "^4.0.2",
     "prop-types": "^15.8.1"
   }
 }

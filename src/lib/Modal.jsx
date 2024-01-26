@@ -9,6 +9,9 @@ import './Modal.css'
  *
  * @category Components
  * @component
+ * @param {object} children
+ * @param {boolean} isOpen state variable boolean for controling modal visibility
+ * @param {function} onClose callback to close the modal component
  * @returns {React.Component} - The modal component.
  */
 const Modal = ({ children, isOpen, onClose }) => {
@@ -43,7 +46,7 @@ const Modal = ({ children, isOpen, onClose }) => {
   )
 }
 
-Modal.prototype = {
+Modal.propTypes = {
   /** Content of the modal */
   children: propTypes.object,
   /** Boolean that defines if the modal is open or not */
