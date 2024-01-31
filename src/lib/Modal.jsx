@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect } from 'react'
+import React, { useEffect } from 'react'
 import propTypes from 'prop-types'
 
 import './Modal.css'
